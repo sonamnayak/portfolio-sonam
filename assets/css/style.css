@@ -449,7 +449,7 @@ nav {
     color: #ffffff;
     font-size: 36px;
     max-width: 360px;
-    margin: 20px 0;
+    margin: 20px 0 6px 0;
 }
 
 .card_content a {
@@ -466,7 +466,14 @@ nav {
 
 .card_content p {
     display: none;
-    padding-top: 6px;
+    margin-top: 6px;
+}
+
+.card_content p:first-of-type {
+    color: #ffffff;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
 }
 
 .cards:nth-child(even) .card_content {
