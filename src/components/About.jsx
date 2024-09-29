@@ -37,7 +37,7 @@ export default function About() {
           animate={isVisible ? "visible" : "hidden"}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          I'm a Web Developer
+          I'm a FrontEnd Developer
         </motion.h3>
         <motion.h1
           initial="hidden"
@@ -45,7 +45,7 @@ export default function About() {
           animate={isVisible ? "visible" : "hidden"}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          I Develop Beautiful Web Applications
+          I Develop Beautiful Applications
         </motion.h1>
         <motion.p
           initial="hidden"

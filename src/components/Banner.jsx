@@ -54,7 +54,7 @@ export default function Banner() {
             animate={isVisible ? "visible" : "hidden"}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Innovative, task-driven web developer with experience in MERN stack
+            Innovative, task-driven frontend developer with experience in MERN stack
             technology. I'm passionate and enthusiastic about my work.
           </motion.p>
           <motion.div
