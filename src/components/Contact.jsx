@@ -7,6 +7,15 @@ export default function Contact() {
   const { ref: infoRef, isVisible: isInfoVisible } =
     useIntersectionObserver(0.1);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = formRef.current;
+    const name = form.name.value;
+    const number = form.number.value;
+    const message = form.message.value;
+    window.location.href = `mailto:sonamnayak2710@gmail.com?subject=Query&body=Name: ${name}%0APhone Number: ${number}%0AMessage: ${message}`;
+  };
+
   return (
     <section className="contact container heading" id="contact">
       <h3>Don't be shy</h3>
@@ -15,7 +24,6 @@ export default function Contact() {
         <motion.form
           ref={formRef}
           className="contact__form"
-          action="mailto:sonamnayak2710@gmail.com"
           method="post"
           encType="text/plain"
           initial={{ opacity: 0, x: -50 }}
@@ -24,6 +32,7 @@ export default function Contact() {
             x: isFormVisible ? 0 : -50,
           }}
           transition={{ duration: 0.8 }}
+          onSubmit={handleSubmit}
         >
           <input
             type="text"
@@ -32,9 +41,9 @@ export default function Contact() {
             aria-required="true"
           />
           <input
-            type="email"
-            name="email"
-            placeholder="Email"
+            type="tel"
+            name="number"
+            placeholder="Phone Number"
             aria-required="true"
           />
           <textarea
