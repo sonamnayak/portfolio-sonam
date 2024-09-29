@@ -46,7 +46,7 @@ export default function Banner() {
             animate={isVisible ? "visible" : "hidden"}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Web Developer
+            FrontEnd Developer
           </motion.h2>
           <motion.p
             initial="hidden"
