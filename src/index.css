@@ -966,6 +966,11 @@ footer {
   .contact__data h4 {
     font-size: 16px;
   }
+
+  .domain .row {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media print {
